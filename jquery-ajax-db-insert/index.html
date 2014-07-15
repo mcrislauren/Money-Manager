@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>ZetCoby</title>    
+    <script src = "js/jquery-1.10.2.min.js"></script>    
+	</head>
+	<body>
+	   <button>Hit me</button>
+       <div class="message"></div>
+        <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $.ajax({
+                  url: "src/dbInsertDate.php",
+                  cache: false,
+                  success: function(html){
+                    $(".message").append(html);
+                  }
+                });
+            });            
+        });
+        </script>
+	</body>
+</html>
