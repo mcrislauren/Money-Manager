@@ -10,7 +10,7 @@
         $(document).ready(function(){
             $('button').click(function(){
                 $.ajax({
-                  url: "dbInsertDate.php",
+                  url: "db_logic/dbInsertDate.php",
                   cache: false,
                   success: function(html){
                     $(".message").append(html);
