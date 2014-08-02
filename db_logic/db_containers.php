@@ -9,8 +9,8 @@ class User {
     public $modified_time;
     public $deleted_time;
 
-    public $wallets;
-    public $transactions;
+    public $wallets = array();
+    public $transactions = array();
 }
 class Wallet {
     public $ID;

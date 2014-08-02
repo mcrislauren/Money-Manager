@@ -1,8 +1,8 @@
 <?php
-$host       = "localhost";
-$username   = "user";
-$password   = "some_pass";
-$port       = "";
-$socket     = "";
-$database   = "my_money";
+define('HOST', 'localhost');
+define('USERNAME', 'user');
+define('PASSWROD', 'some_pass');
+define('DATABASE', 'my_money');
+define('PORT','');
+define('SOCKET','');
 ?>
