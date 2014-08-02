@@ -20,8 +20,8 @@ class Wallet {
     public $modified_time;
     public $deleted_time;
 
-    public $users;
-    public $transactions;
+    public $users = array();
+    public $transactions = array();
 }
 class Transaction {
     public $ID;
@@ -31,7 +31,7 @@ class Transaction {
     public $status;
     public $description;
 
-    public $attachments;
+    public $attachments = array();
     public $user;
     public $wallet;
 }
@@ -45,7 +45,7 @@ class Category {
     public $name;
     public $description;
 
-    public $transactions;
+    public $transactions = array();
 }
 class Subcategory {
     public $ID;
